@@ -5,6 +5,9 @@ function Contact(first, last, email) {
   this.email = email;
 }
 
+Contact.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
+}
 
 //user interface logic
 $(document).ready(function() {
@@ -17,7 +20,7 @@ $(document).ready(function() {
 
     var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedEmail);
 
-    $("ul#contact-list").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
+    $("ul#contact-list").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
     $(".contact").last().click(function(){
       $("#show-contact").show();
