@@ -19,10 +19,6 @@ $(document).ready(function() {
 
     $("ul#contact-list").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
 
-    $("input#first-name").val("");
-    $("input#last-name").val("");
-    $("input#email").val("");
-
     $(".contact").last().click(function(){
       $("#show-contact").show();
       $("#show-contact h2").text(newContact.firstName);
@@ -31,7 +27,9 @@ $(document).ready(function() {
       $(".emailaddr").text(newContact.email);
     });
 
+    $("input#first-name").val("");
+    $("input#last-name").val("");
+    $("input#email").val("");
+
   });
-
-
 });
