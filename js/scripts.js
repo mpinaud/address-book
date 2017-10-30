@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     $(".contact").last().click(function(){
       $("#show-contact").show();
-      $("#show-contact h2").text(newContact.firstName);
+      $("#show-contact h2").text(newContact.fullName);
       $(".first").text(newContact.firstName);
       $(".last").text(newContact.lastName);
       $(".emailaddr").text(newContact.email);
