@@ -1,8 +1,15 @@
 //business logic
-function Contact(first, last, email) {
+function Contact(first, last, email, addresses) {
   this.firstName = first;
   this.lastName = last;
   this.email = email;
+  this.addresses = [];
+}
+
+function Address(street, city, state) {
+  this.street = street;
+  this.city = city;
+  this.state = state;
 }
 
 Contact.prototype.fullName = function() {
@@ -17,8 +24,10 @@ $(document).ready(function() {
     var inputtedFirstName = $("input#first-name").val();
     var inputtedLastName = $("input#last-name").val();
     var inputtedEmail = $("input#email").val();
+    var inputtedAddy = $("input#address").val();
 
-    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedEmail);
+    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedEmail, inputtedAddy);
+
 
     $("ul#contact-list").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
