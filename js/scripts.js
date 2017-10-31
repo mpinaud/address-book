@@ -27,6 +27,7 @@ function resetFields() {
     $("input.new-street").val("");
     $("input.new-city").val("");
     $("input.new-state").val("");
+    $(".new-address").not(":last-child").remove();
 }
 
 //user interface logic
