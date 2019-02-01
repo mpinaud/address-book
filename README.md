@@ -6,7 +6,7 @@ An application solely to practice Constructors and Prototypes using a Form.
 
 # What I Learned
 
-* How to use a function as a Object Constructor
+* How to use a function as a Constructor
 * How to create an associated Prototype object
 * How to create and implement a resetField function after a form is submitted
 * How to show and hide content using the jQuery show() method
