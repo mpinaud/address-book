@@ -1,6 +1,6 @@
 # Address Book
 
-![alt text](https://github.com/mpinaud/address-book/blob/master/img/ad.png)
+![alt text](https://github.com/mpinaud/address-book/blob/master/img/ab.png)
 
 An application solely to practice Constructors and Prototypes using a Form.
 
